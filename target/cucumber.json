@@ -1,0 +1,147 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Assuming user is on login page",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4234000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 2000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 6,
+            "name": "The user is on Vytrack login page",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.the_user_is_on_vytrack_login_page()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-07-31T01:00:07.482Z",
+        "line": 9,
+        "name": "Login as a Truck Driver",
+        "description": "",
+        "id": "as-a-truck-driver/-sales-manager/-store-manager;login-as-a-truck-driver",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.cybertek.step_definitions.Hooks.tearDownScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4257000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 10,
+            "name": "the user enters correct username and password for Truck Driver and clicks on Log in button",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.theUserEntersCorrectUsernameAndPasswordForTruckDriverAndClicksOnLogInButton()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "before": [
+              {
+                "result": {
+                  "duration": 1000000,
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.setupStep()"
+                }
+              }
+            ],
+            "line": 11,
+            "name": "user should be able to log in to his Truck Driver account",
+            "match": {
+              "location": "com.cybertek.step_definitions.Login_StepDefinitions.user_should_be_able_to_log_in_to_his_truck_driver_account()"
+            },
+            "after": [
+              {
+                "result": {
+                  "status": "passed"
+                },
+                "match": {
+                  "location": "com.cybertek.step_definitions.Hooks.afterStep()"
+                }
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@truckDriver"
+          }
+        ]
+      }
+    ],
+    "name": "As a Truck driver/ Sales Manager/ Store Manager",
+    "description": "  I should be able to log in with valid credentials to Vytrack\u0027s Fleet Management module.",
+    "id": "as-a-truck-driver/-sales-manager/-store-manager",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/vytrackLogin.feature",
+    "tags": []
+  }
+]
